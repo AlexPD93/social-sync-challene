@@ -1,8 +1,12 @@
 import { createCalendar } from "../helper";
 import "./Hatch.css";
 export default function Hatch({ date }) {
+  const dateNum = date.slice(0, 2);
+
   function handleClick(e) {
-    console.log(date, e.target);
+    if (e.target.className === dateNum) {
+      e.target.style.backgroundColor = "red";
+    }
   }
   return (
     <div>
@@ -10,8 +14,8 @@ export default function Hatch({ date }) {
         return (
           <div className="hatch-container" key={index}>
             <div className={num.nr} onClick={handleClick}>
-              <p>{num.nr}</p>
-              <img width={120} src={num.img} alt="" />
+              <p className={num.nr}>{num.nr}</p>
+              <img className={num.nr} width={120} src={num.img} alt="" />
             </div>
             <div className="back">
               <img width={120} src={num.backFile} alt="" />
