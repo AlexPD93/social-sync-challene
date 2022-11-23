@@ -1,1 +1,1 @@
-# social-sync-challene
+# Advent calendar
