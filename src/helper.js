@@ -186,6 +186,13 @@ export const hatchArray = [
     open: false,
     backFile: Door3bkg,
   },
+  {
+    id: "hatch-25",
+    nr: 25,
+    img: Door7bkg,
+    open: false,
+    backFile: Door2bkg,
+  },
 ];
 
 export const createCalendar = shuffle(hatchArray);
