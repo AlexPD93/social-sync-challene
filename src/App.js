@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <h1>Advent Calendar</h1>
-      <p>Today's date is : {date}</p>
+      <h2>Today's date is : {date}</h2>
       <Hatch date={date} />
     </div>
   );

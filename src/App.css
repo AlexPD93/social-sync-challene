@@ -1,4 +1,10 @@
 body {
   background: center / cover url(images/calendar_backdrop.jpg);
   margin: 0;
+  font-family: "Dancing Script", cursive;
+}
+
+h1,
+h2 {
+  text-align: center;
 }

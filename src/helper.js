@@ -10,11 +10,7 @@ import Door9bkg from "./images/9.jpg";
 import Door10bkg from "./images/10.jpg";
 
 const shuffle = (a) => {
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
+  return a.sort(() => Math.random() - 0.5);
 };
 
 export const hatchArray = [
