@@ -3,6 +3,7 @@
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   padding: 40px;
+  width: 95%;
 }
 
 .hatch-container {
@@ -15,7 +16,7 @@
   border-radius: 50%;
   border: 1px solid #000;
   box-sizing: border-box;
-  gap: 20px;
+  cursor: pointer;
 }
 
 .front {
@@ -29,7 +30,7 @@
   border-radius: 50%;
 }
 
-.front-p-tag {
+.front-h3-tag {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,8 +45,7 @@
   z-index: 3;
 }
 
-.front-img-tag,
-.back-img-tag {
+.front-img-tag {
   border-radius: 50%;
   width: 5rem;
   position: absolute;
@@ -53,6 +53,32 @@
   top: 0;
   left: 0;
   z-index: 1;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+
+.back-img-tag {
+  border-radius: 50%;
+  width: 5rem;
+  position: absolute;
+  background: center;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+
+.opened {
+  border-radius: 50%;
+  width: 5rem;
+  position: absolute;
+  background: center;
+  top: 0;
+  left: 0;
+  z-index: 3;
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
