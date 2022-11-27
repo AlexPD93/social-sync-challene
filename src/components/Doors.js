@@ -6,10 +6,11 @@ import "./Doors.css";
 export default function Doors() {
   const date = Date.slice(0, 2);
   const month = Date.slice(3, 5);
-  // If you would like to see the advent calendar working before December use these variables instead of 12 in line 27 and date in line 28.
 
+  // If you would like to see the advent calendar working before December use these variables instead of 12 in line 29 and date in line 30.
   // const fakeDate = 10;
   // const fakeMonth = 11;
+
   const [calendar, setCalendar] = useState(createCalendar);
 
   useEffect(() => {
@@ -25,8 +26,8 @@ export default function Doors() {
     const newArray = calendar.map((door) => {
       if (
         // check date is not in the future
-        Number(month) === 12 && //change to 12
-        doorNumber <= date && //change to date
+        Number(month) === 12 &&
+        doorNumber <= date &&
         // Only open door that is clicked
         door.nr === doorNumber
       ) {
