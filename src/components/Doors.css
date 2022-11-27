@@ -3,20 +3,18 @@
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   padding: 40px;
-  width: 95%;
 }
 
 .door-container {
   display: flex;
   align-items: center;
-  width: 10rem;
-  height: 10rem;
+  width: 10.5rem;
+  height: 10.5rem;
   transition: all 0.5s;
   transform-style: preserve-3d;
   border-radius: 50%;
-  border: 1px solid #000;
-  box-sizing: border-box;
   cursor: pointer;
+  margin: 0 auto;
 }
 
 .front {
@@ -47,33 +45,30 @@
 
 .front-img-tag {
   border-radius: 50%;
-  width: 5rem;
   position: absolute;
   background: center;
   top: 0;
   left: 0;
   z-index: 1;
-  width: 10rem;
-  height: 10rem;
-  border-radius: 50%;
+  width: 10.5rem;
+  height: 10.5rem;
+  border: 3px solid black;
 }
 
 .back-img-tag {
   border-radius: 50%;
-  width: 5rem;
   position: absolute;
   background: center;
   top: 0;
   left: 0;
   z-index: 0;
-  width: 10rem;
-  height: 10rem;
-  border-radius: 50%;
+  width: 9rem;
+  height: 9rem;
+  margin: 0.5rem;
 }
 
 .opened {
   border-radius: 50%;
-  width: 5rem;
   position: absolute;
   background: center;
   top: 0;
@@ -81,5 +76,4 @@
   z-index: 3;
   width: 10rem;
   height: 10rem;
-  border-radius: 50%;
 }
