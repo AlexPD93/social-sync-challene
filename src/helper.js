@@ -1,194 +1,194 @@
-import Door1bkg from "./images/1.jpg";
-import Door2bkg from "./images/2.jpg";
-import Door3bkg from "./images/3.jpg";
-import Door4bkg from "./images/4.jpg";
-import Door5bkg from "./images/5.jpg";
-import Door6bkg from "./images/6.jpg";
-import Door7bkg from "./images/7.jpg";
-import Door8bkg from "./images/8.jpg";
-import Door9bkg from "./images/9.jpg";
-import Door10bkg from "./images/10.jpg";
-
+// import Door1bkg from "./images/1.jpg";
+import FrontDoor from "./images/7.jpg";
+import Chick from "./images/chick.jpg";
+import Cat from "./images/cat.jpg";
+import Dog from "./images/dog.jpg";
 const shuffle = (a) => {
   return a.sort(() => Math.random() - 0.5);
 };
+
+const current = new Date();
+const date = `${current.getDate()}/${
+  current.getMonth() + 1
+}/${current.getFullYear()}`;
 
 export const hatchArray = [
   {
     id: "hatch-1",
     nr: 1,
-    img: Door1bkg,
+    img: FrontDoor,
     open: false,
-    backFile: Door1bkg,
+    backFile: Cat,
   },
   {
     id: "hatch-2",
     nr: 2,
-    img: Door2bkg,
+    img: FrontDoor,
     open: false,
-    backFile: Door3bkg,
+    backFile: Dog,
   },
   {
     id: "hatch-3",
     nr: 3,
-    img: Door3bkg,
+    img: FrontDoor,
     open: false,
-    backFile: Door2bkg,
+    backFile: Cat,
   },
   {
     id: "hatch-4",
     nr: 4,
-    img: Door4bkg,
+    img: FrontDoor,
     open: false,
     backFile: "https://www.youtube.com/embed/nrrSs1JI2mU",
   },
   {
     id: "hatch-5",
     nr: 5,
-    img: Door5bkg,
+    img: FrontDoor,
     open: false,
-    backFile: Door1bkg,
+    backFile: Chick,
   },
   {
     id: "hatch-6",
     nr: 6,
-    img: Door6bkg,
+    img: FrontDoor,
     open: false,
-    backFile: Door5bkg,
+    backFile: Chick,
   },
   {
     id: "hatch-7",
     nr: 7,
-    img: Door7bkg,
+    img: FrontDoor,
     open: false,
-    backFile: Door6bkg,
+    backFile: Cat,
   },
   {
     id: "hatch-8",
     nr: 8,
-    img: Door8bkg,
+    img: FrontDoor,
     open: false,
     backFile: "https://www.youtube.com/embed/nrrSs1JI2mU",
   },
   {
     id: "hatch-9",
     nr: 9,
-    img: Door9bkg,
+    img: FrontDoor,
     open: false,
-    backFile: Door10bkg,
+    backFile: Dog,
   },
   {
     id: "hatch-10",
     nr: 10,
-    img: Door10bkg,
+    img: FrontDoor,
     open: false,
-    backFile: Door1bkg,
+    backFile: Chick,
   },
   {
     id: "hatch-11",
     nr: 11,
-    img: Door1bkg,
+    img: FrontDoor,
     open: false,
-    backFile: Door5bkg,
+    backFile: Chick,
   },
   {
     id: "hatch-12",
     nr: 12,
-    img: Door2bkg,
+    img: FrontDoor,
     open: false,
-    backFile: Door9bkg,
+    backFile: Chick,
   },
   {
     id: "hatch-13",
     nr: 13,
-    img: Door3bkg,
+    img: FrontDoor,
     open: false,
     backFile: "https://www.youtube.com/embed/nrrSs1JI2mU",
   },
   {
     id: "hatch-14",
     nr: 14,
-    img: Door4bkg,
+    img: FrontDoor,
     open: false,
-    backFile: Door7bkg,
+    backFile: Chick,
   },
   {
     id: "hatch-15",
     nr: 15,
-    img: Door5bkg,
+    img: FrontDoor,
     open: false,
-    backFile: Door6bkg,
+    backFile: Cat,
   },
   {
     id: "hatch-16",
     nr: 16,
-    img: Door6bkg,
+    img: FrontDoor,
     open: false,
     backFile: "https://www.youtube.com/embed/nrrSs1JI2mU",
   },
   {
     id: "hatch-17",
     nr: 17,
-    img: Door7bkg,
+    img: FrontDoor,
     open: false,
-    backFile: Door5bkg,
+    backFile: Chick,
   },
   {
     id: "hatch-18",
     nr: 18,
-    img: Door8bkg,
+    img: FrontDoor,
     open: false,
-    backFile: Door1bkg,
+    backFile: Cat,
   },
   {
     id: "hatch-19",
     nr: 19,
-    img: Door9bkg,
+    img: FrontDoor,
     open: false,
-    backFile: Door8bkg,
+    backFile: Dog,
   },
   {
     id: "hatch-20",
     nr: 20,
-    img: Door10bkg,
+    img: FrontDoor,
     open: false,
     backFile: "https://www.youtube.com/embed/nrrSs1JI2mU",
   },
   {
     id: "hatch-21",
     nr: 21,
-    img: Door1bkg,
+    img: FrontDoor,
     open: false,
-    backFile: Door8bkg,
+    backFile: Cat,
   },
   {
     id: "hatch-22",
     nr: 22,
-    img: Door2bkg,
+    img: FrontDoor,
     open: false,
-    backFile: Door10bkg,
+    backFile: Chick,
   },
   {
     id: "hatch-23",
     nr: 23,
-    img: Door3bkg,
+    img: FrontDoor,
     open: false,
-    backFile: Door4bkg,
+    backFile: Cat,
   },
   {
     id: "hatch-24",
     nr: 24,
-    img: Door4bkg,
+    img: FrontDoor,
     open: false,
     backFile: "https://www.youtube.com/embed/nrrSs1JI2mU",
   },
   {
     id: "hatch-25",
     nr: 25,
-    img: Door7bkg,
+    img: FrontDoor,
     open: false,
     backFile: "https://www.youtube.com/embed/g-OF7KGyDis",
   },
 ];
 
 export const createCalendar = shuffle(hatchArray);
+export default date;

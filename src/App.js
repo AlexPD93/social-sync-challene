@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Hatch from "./components/Hatch";
+import Doors from "./components/Doors";
 function App() {
   const current = new Date();
   const date = `${current.getDate()}/${
@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <h1>Advent Calendar</h1>
       <h2>Today's date is : {date}</h2>
-      <Hatch date={date} />
+      <Doors date={date} />
     </div>
   );
 }
