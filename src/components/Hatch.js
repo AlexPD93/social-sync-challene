@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { createCalendar } from "../helper";
 import "./Hatch.css";
 
@@ -8,14 +8,29 @@ export default function Hatch({ date }) {
 
   const [calendar, setCalendar] = useState(createCalendar);
 
+  useEffect(() => {
+    const local = JSON.parse(localStorage.getItem("doors"));
+    if (local) {
+      setCalendar(local);
+    } else return;
+  }, []);
+
   function handleClick(e) {
+    // If door number is not in the future. Open it when clicked on.
+    // Check month is 12 and door number isn't greater than date
+
     const newArray = calendar.map((door) => {
-      if (door.nr >= 25 && Number(month) === 11) {
+      if (
+        e.target.className.includes(10) &&
+        door.nr === 10 &&
+        Number(month) === 11
+      ) {
         return { ...door, open: true };
       }
       return door;
     });
     setCalendar(newArray);
+    localStorage.setItem("doors", JSON.stringify(newArray));
   }
 
   return (
@@ -36,7 +51,6 @@ export default function Hatch({ date }) {
                 className={obj.open ? "opened" : `${obj.nr}, back-img-tag`}
                 src={obj.backFile}
                 title="YouTube video player"
-                frameborder="0"
                 allow="autoplay; encrypted-media;"
               ></iframe>
             ) : (
@@ -52,5 +66,3 @@ export default function Hatch({ date }) {
     </div>
   );
 }
-
-// Number(dateNum)
