@@ -1,6 +1,6 @@
 # Advent calendar
 
-Visit deployed site [here](warm-semolina-d0949a.netlify.app/).
+Visit deployed site [here](www.warm-semolina-d0949a.netlify.app/).
 
 ## Build an advent calendar that shows small videos.
 
