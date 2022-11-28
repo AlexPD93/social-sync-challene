@@ -1,5 +1,7 @@
 # Advent calendar
 
+Visit deployed site [here](warm-semolina-d0949a.netlify.app/).
+
 ## Build an advent calendar that shows small videos.
 
 - [X] Create a date input that allows you to simulate the current day of december.
